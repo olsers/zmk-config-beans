@@ -1,0 +1,13 @@
+file_format: "1"
+id: beans
+name: beans
+type: shield
+url: https://github.com/MakotoKurauchi/beans
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+siblings:
+  - beans_left
+  - beans_right
