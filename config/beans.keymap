@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <200>;
     flavor = "tap-preferred";
 };
 
@@ -39,8 +39,8 @@
             bindings = <
 &kp LG(LS(S))  &kp BACKSLASH  &kp ENTER          &kp UP_ARROW  &kp LC(LS(R))  &kp LC(LA(LS(T)))    &none   &none     &kp UP_ARROW  &none      &kp LC(LA(DELETE))  &bt BT_CLR
 &kp LS(TAB)    &kp LC(LS(H))  &kp LEFT           &kp DOWN      &kp RIGHT      &kp LA(LC(G))        &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none               &bt BT_SEL 0
-&kp LG(V)      &kp LC(LS(L))  &kp LC(BACKSLASH)  &kp LA(N8)    &kp LA(N9)     &kp LC(LA(B))        &none   &none     &none         &none      &bt BT_SEL 2        &bt BT_SEL 1
-                              &trans             &trans        &none          &trans               &trans  &none     &trans        &trans
+&trans         &kp LC(LS(L))  &kp LC(BACKSLASH)  &kp LA(N8)    &kp LA(N9)     &kp LC(LA(B))        &none   &none     &none         &none      &bt BT_SEL 2        &bt BT_SEL 1
+                              &kp LG(V)          &trans        &none          &trans               &trans  &none     &trans        &trans
             >;
         };
     };
