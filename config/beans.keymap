@@ -14,6 +14,22 @@
 &lt { flavor = "hold-preferred"; };
 
 / {
+    macros {
+        quick_thumbs_up: quick_thumbs_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp LS(Y) &kp RPAR>;
+            label = "QUICK_THUMBS_UP";
+        };
+
+        pw: pw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(G) &kp LS(R) &kp LS(E) &kp LS(E) &kp LS(N) &kp D &kp O &kp G &kp N5 &kp PRCNT>;
+            label = "PW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,10 +44,10 @@
 
         numbers_symbols {
             bindings = <
-&none  &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &kp DOLLAR  &kp PERCENT           &kp HASH  &kp ASTRK              &kp TILDE      &sl 3
-&none  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &none     &kp AT      &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp N0         &kp PIPE
-&none  &none         &kp N7        &kp N8        &kp N9        &none     &kp CARET   &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp BACKSLASH  &none
-                     &none         &none         &none         &trans    &trans      &none                 &none     &none
+&none          &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none     &kp DOLLAR  &kp PERCENT           &kp HASH  &kp ASTRK              &kp TILDE      &sl 3
+&kp BACKSPACE  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &none     &kp AT      &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp N0         &kp PIPE
+&none          &none         &kp N7        &kp N8        &kp N9        &none     &kp CARET   &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp BACKSLASH  &quick_thumbs_up
+                             &none         &none         &none         &trans    &trans      &none                 &none     &none
             >;
         };
 
@@ -40,7 +56,7 @@
 &kp LG(LS(S))     &kp BACKSLASH  &kp ENTER          &kp UP_ARROW  &kp LC(LS(R))  &kp LC(LA(LS(T)))    &out OUT_BLE    &none     &kp UP_ARROW    &none               &none         &bt BT_CLR
 &kp LG(V)         &kp LC(LS(H))  &kp LEFT           &kp DOWN      &kp RIGHT      &kp LA(LC(G))        &out OUT_USB    &kp LEFT  &kp DOWN        &kp RIGHT           &kp LEFT_GUI  &bt BT_SEL 0
 &kp LEFT_CONTROL  &kp LC(LS(L))  &kp LC(BACKSLASH)  &kp LA(N8)    &kp LA(N9)     &kp LC(LA(B))        &kp LG(PERIOD)  &none     &kp LEFT_SHIFT  &none               &none         &bt BT_SEL 1
-                                 &none              &none         &none          &kp LG(TAB)          &none           &none     &none           &kp LC(LA(DELETE))
+                                 &none              &none         &none          &kp LG(TAB)          &pw             &none     &none           &kp LC(LA(DELETE))
             >;
         };
 
