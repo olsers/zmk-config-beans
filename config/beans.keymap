@@ -53,7 +53,7 @@
 
         figma {
             bindings = <
-&kp LG(LS(NUMBER_5))  &none          &kp BACKSLASH      &kp UP_ARROW  &kp ENTER   &kp LG(R)        &out OUT_BLE  &none     &kp UP_ARROW  &none      &none  &bt BT_CLR
+&kp LG(LS(NUMBER_4))  &none          &kp BACKSLASH      &kp UP_ARROW  &kp ENTER   &kp LG(R)        &out OUT_BLE  &none     &kp UP_ARROW  &none      &none  &bt BT_CLR
 &kp LS(LG(C))         &kp LS(LG(H))  &kp LEFT           &kp DOWN      &kp RIGHT   &kp LA(LG(G))    &out OUT_USB  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &bt BT_SEL 0
 &kp LCTRL             &kp LS(LG(L))  &kp LG(BACKSLASH)  &kp LA(N8)    &kp LA(N9)  &kp LA(LG(B))    &none         &none     &none         &none      &none  &bt BT_SEL 1
                                      &none              &none         &none       &none            &pw           &none     &none         &none
