@@ -44,10 +44,10 @@
 
         numbers_symbols {
             bindings = <
-&trans  &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none            &kp DOLLAR  &kp PERCENT           &kp HASH  &kp ASTRK              &kp TILDE      &none
-&trans  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE    &kp AT      &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp N0         &kp PIPE
-&trans  &none         &kp N7        &kp N8        &kp N9        &none            &kp CARET   &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp BACKSLASH  &quick_thumbs_up
-                      &trans        &trans        &none         &trans           &trans      &trans                &none     &trans
+&trans  &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none            &kp DOLLAR   &kp LEFT_BRACE        &kp AT    &kp RIGHT_BRACE        &kp TILDE      &kp CARET
+&trans  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &none            &kp PERCENT  &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE
+&trans  &none         &kp N7        &kp N8        &kp N9        &kp BACKSPACE    &kp HASH     &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp STAR       &quick_thumbs_up
+                      &trans        &trans        &none         &trans           &trans       &trans                &none     &trans
             >;
         };
 
