@@ -35,7 +35,7 @@
 
         base {
             bindings = <
-&kp ESC                       &kp Q  &kp W         &kp E             &kp R  &kp T        &kp Y          &kp U  &kp I              &kp O    &kp P     &kp EQUAL
+&mt LCTRL ESCAPE              &kp Q  &kp W         &kp E             &kp R  &kp T        &kp Y          &kp U  &kp I              &kp O    &kp P     &kp EQUAL
 &mt LS(LA(LC(LEFT_GUI))) TAB  &kp A  &kp S         &mt LEFT_SHIFT D  &kp F  &kp G        &kp H          &kp J  &mt RIGHT_SHIFT K  &kp L    &kp SEMI  &kp SQT
 &kp LEFT_GUI                  &kp Z  &kp X         &kp C             &kp V  &kp B        &kp N          &kp M  &kp COMMA          &kp DOT  &kp FSLH  &kp MINUS
                                      &kp LEFT_ALT  &lt 2 DELETE      &mo 1  &kp SPACE    &kp BACKSPACE  &mo 1  &lt 2 DELETE       &kp RET
@@ -45,8 +45,8 @@
         numbers_symbols {
             bindings = <
 &trans  &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none            &kp DOLLAR   &kp LEFT_BRACE        &kp AT    &kp RIGHT_BRACE        &kp TILDE      &kp CARET
-&trans  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &none            &kp PERCENT  &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE
-&trans  &none         &kp N7        &kp N8        &kp N9        &kp BACKSPACE    &kp HASH     &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp STAR       &quick_thumbs_up
+&trans  &kp NUMBER_0  &kp N4        &kp N5        &kp NUMBER_6  &kp BACKSPACE    &kp PERCENT  &kp LEFT_PARENTHESIS  &kp EXCL  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp PIPE
+&trans  &none         &kp N7        &kp N8        &kp N9        &none            &kp HASH     &kp LEFT_BRACKET      &kp AMPS  &kp RIGHT_BRACKET      &kp STAR       &quick_thumbs_up
                       &trans        &trans        &none         &trans           &trans       &trans                &none     &trans
             >;
         };
@@ -56,7 +56,7 @@
 &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))  &kp BACKSLASH      &kp UP_ARROW  &kp ENTER   &kp LG(R)        &out OUT_BLE  &none     &kp UP_ARROW  &none      &none  &bt BT_CLR
 &kp LS(LG(C))         &kp LS(LG(H))   &kp LEFT           &kp DOWN      &kp RIGHT   &kp LA(LG(G))    &out OUT_USB  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &bt BT_SEL 0
 &kp LCTRL             &kp LS(LG(L))   &kp LG(BACKSLASH)  &kp LA(N8)    &kp LA(N9)  &kp LA(LG(B))    &none         &none     &none         &none      &none  &bt BT_SEL 1
-                                      &none              &none         &none       &none            &pw           &none     &none         &none
+                                      &trans             &none         &trans      &trans           &pw           &trans    &none         &trans
             >;
         };
     };
