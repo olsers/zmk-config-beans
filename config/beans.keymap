@@ -25,7 +25,7 @@
         pw: pw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N8 &kp Y &kp LS(F) &kp N1 &kp N1 &kp D &kp LS(B) &kp X &kp Z &kp N3 &kp PRCNT>;
+            bindings = <&kp LS(F) &kp LS(G) &kp STAR &kp Z &kp T &kp E &kp LS(T) &kp LS(F) &kp U &kp LS(H) &kp N4 &kp P>;
             label = "PW";
         };
     };
